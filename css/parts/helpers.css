@@ -1,0 +1,80 @@
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+
+.main-center{
+    max-width: 1000px;
+}
+
+.read::before{
+    font-family: fa;
+    font-size: normal;
+    content:'\f658'
+
+}
+.unRead::before {
+    font-family: fa;
+    font-size: large;
+    content:'\f0e0'
+    
+}
+.remove-btn::before{
+    font-family: fa;
+    font-size: large;
+    content:'\f2ed'
+}
+.replay-btn::before{
+    font-family: fa;
+    font-size: normal;
+    content:'\f3e5'
+}
+.compose-btn::before{
+    font-family: fa;
+    font-size: normal;
+    content:'\f0fe'
+}
+.remove-btn-open::before{
+    font-family: fa;
+    font-size: large;
+    content:'\f2ed'
+}
+.no-btn {
+    /* display: none; */
+    background: none;
+    border: none;
+}
+.folder-filter :first-child::before{
+    font-family: fa;
+    font-size: large;
+    content: '\f01c';
+
+}
+
+.folder-filter .sent-folder::before{
+    font-family: fa;
+    font-size: large;
+    content: '\f1d8';
+
+}
+.trash-folder::before{
+    font-family: fa;
+    font-size: large;
+    content: '\f2ed';
+
+}
+
+.marked-to-do {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.col {
+    flex-direction: column;
+}
+
+

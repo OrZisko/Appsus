@@ -1,0 +1,369 @@
+@font-face {
+    font-family: sans-black;
+    src: url(../../../css/parts/fonts/fire-sans/FiraSans-Black.ttf);
+}
+@font-face {
+    font-family: sans-light;
+    src: url(../../../css/parts/fonts/fire-sans/FiraSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: sans-medium;
+    src: url(../../../css/parts/fonts/fire-sans/FiraSans-Medium.ttf);
+}
+@font-face {
+    font-family: sans-extra-light;
+    src: url(../../../css/parts/fonts/fire-sans/FiraSans-Light.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../../../css/parts/fonts/roboto/RobotoSlab-VariableFont_wght.ttf);
+}
+
+.mail-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .email-options{     
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px
+    
+}
+.email-options {
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+    margin-block: 10px;
+    border:none;
+    border-radius: 10px;
+} */
+ /* .side-main-app{
+position: relative;
+bottom: 200px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+} */
+.email-subject{
+    font-family: sans-medium;
+}
+.email-send{
+    font-family: sans-light;
+}
+.email-sent-time{
+    font-family: sans-extra-light;
+}
+.email-count{
+    font-family: sans-black;
+}
+.email-body{
+    font-family: roboto;
+}
+.folder-info{
+    color: white;
+    font-family: sans-black;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: sandybrown;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+
+} 
+
+.user-msg{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.folder-type{
+    color:black;
+    position: absolute;
+    top: 190px;
+    right:400px;
+    font-size: 3.5rem;
+}
+.replay-btn:hover{
+    background: white;
+}
+
+
+@media (min-width:370px){
+    .mail-main{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mail-list{
+        max-width: 370px;
+        flex-direction: column;
+        border:none;
+    }
+    .side-main-app{
+        bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .email-options{
+        font-size: 1.5rem;
+        cursor: pointer;
+        width: 200px;
+        height: 80px;
+        margin-block: 10px;
+        border:none;
+        border-radius: 10px;
+        margin-top:0 ;
+    }
+    .folder-filter{
+        flex-direction: row;
+        margin-block-end: 5px;
+    }
+    .folder-info{
+        background-color: sandybrown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 250px;
+        height: 40px;
+        margin-block: 5px;
+    }
+    .remove-email-btn >*{
+        margin-inline: 4px;
+        height: 30px;
+        cursor: pointer;
+        width: 40px;
+        border:none;
+        border-radius: 10px;
+        background-color: rgb(248, 234, 217);
+    }
+    .email{
+        max-width: 350px;
+        font-size: 1rem;
+    }
+    .mail-filter{
+        padding: 0;
+    }
+    .mail-filter input{
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .mail-filter select{
+        width: 100px;
+    }
+    .compose-btn , .folder-filter >* {
+        height: 40px;
+    }
+    .email-preview{
+        font-size: 1rem;
+    }
+    .email .email-subject{
+        width: auto;
+    }
+    .email-preview-open{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .email-count{
+        font-size: 1rem;
+    }
+    .replay-btn{
+        display: none;
+    }
+    .email-subject{
+        text-align: center;
+        margin-inline: 4px;
+    }
+    .user-msg{
+        position: absolute;
+        background-color: rgb(241, 246, 196);
+        width: 250px;
+        height: 70px;
+        text-align: center;
+        border-radius: 120px;
+        top: 10%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .folder-filter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .folder-filter >*{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border:none;
+            border-radius: 10px;
+            padding: 10px; 
+            margin-inline: 5px;
+            width: auto;
+    }
+    
+}
+
+
+
+@media (min-width: 1020px) {
+    .mail-list{
+        max-width: 1800px;
+        flex-direction: row;
+    }
+   
+    
+    .folder-filter >* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border:none;
+            border-radius: 10px;
+            padding: 20px; 
+            margin-inline: 5px;
+            width: 200px;
+            height: 50px;
+            margin-block: 10px;
+    }
+    .folder-filter{
+        display: flex;
+        flex-direction: column;
+    }
+    
+        .mail-main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        .email-preview{
+            font-size: 1.5rem;
+
+        }
+        .email-container .email{
+            font-size: 1.7rem;
+
+        }
+        .email .email-subject{
+            width: 400px;
+        }
+        .remove-email-btn{
+            display: block;
+        }
+        .email{
+            max-width: 900px;
+        }
+        .replay-btn{
+            display: block;
+        }
+        .remove-email-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .email-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 200px;
+            height: 80px;
+            margin-block: 10px;
+            border:none;
+            border-radius: 10px;
+        }
+        .side-main-app{
+        position: relative;
+        /* bottom: 200px; */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .folder-info{
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: sandybrown;
+            width: 400px;
+            height: 80px;
+            border-radius: 10px;
+        
+        }
+        .email-count{
+            font-size: 2rem;
+    
+        
+    }
+    .remove-email-btn >*{
+        margin-inline: 10px;
+        height: 50px;
+        cursor: pointer;
+        width: 70px;
+        border:none;
+        border-radius: 10px;
+        background-color: rgb(248, 234, 217);
+    }
+    .user-msg{
+        position: absolute;
+        background-color: rgb(241, 246, 196);
+        width: 350px;
+        height: 70px;
+        text-align: center;
+        border-radius: 120px;
+        top: 10%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .mail-filter{
+        text-align: center;
+        padding: 20px;
+    }
+    .mail-filter input ,.mail-filter select{
+        padding: 15px;
+        width: 400px;
+        border-radius: 10px;
+        background-color: rgb(233, 231, 231);
+        border:none
+    
+    }
+    .folder-filter{
+        display: flex;
+        flex-direction: column;
+      align-items: center;    
+        
+    }
+    .compose-btn{
+        width: 300px;
+    }
+}

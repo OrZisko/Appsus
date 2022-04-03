@@ -1,0 +1,53 @@
+@import '../css/apps/keep/pages/keep-home.css';
+@import '../css/apps/keep/cmps/keep-creat.cmp.css'; 
+@import '../css/cmps/app-footer.css';
+@import '../css/cmps/app-header.css';
+@import '../css/pages/home-page.css';
+@import '../css/parts/helpers.css';
+@import '../css/apps/mail/mail-list.css';
+@import '../css/apps/mail/main-mail.css';
+@import '../css/apps/keep/cmps/bg-color-edit.cmp.css';
+@import '../css/apps/keep/cmps/note-img.cmp.css';
+@import '../css/apps/mail/mail-compose.css';
+@import '../css/apps/mail/email-preview.css';
+@import '../css/parts/font-awsome/webfonts/all.css';
+@import '../css/apps/keep/cmps/create-note-txt.cmp.css';
+@import '../css/cmps/long-text.cmp.css';
+@font-face {
+    font-family: "fa";
+    src: url(../css/parts/fonts/fontawesome-free-5.15.4-web/webfonts/fa-solid-900.ttf);
+  }
+
+body {
+    margin: 0;
+}
+    
+/* .homePage {
+} */
+/* .user-msg{
+    position: absolute;
+    background-color: rgb(241, 246, 196);
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    border-radius: 120px;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    
+} */
+/* animations */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .6s;
+}
+fade-enter, .fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+}
+.logo{
+display: flex;
+align-items: center;
+margin-inline-start: 2rem;
+font-size: 2rem;}

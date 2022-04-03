@@ -1,0 +1,19 @@
+.color-pick {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 2.5px;
+    border-radius: 50%;
+    /* background-color: gold; */
+}
+
+.color-pallete {
+list-style: none;
+padding: 0;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.color-pallete li {
+    margin: 5px;
+}

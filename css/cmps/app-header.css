@@ -1,0 +1,59 @@
+
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+}
+.nav-header{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+}
+.nav-header > *{ 
+    margin-inline-end: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.app-header button {
+    color: white;
+    font-size: 35px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.app-header button:hover {
+    animation: rotation .3s linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.logo {
+    color: white;
+}
+@media (min-width:375px){
+    .nav-header a{
+        font-size: 1em;
+    }
+    .nav-header .logo{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:600px){
+    .nav-header a{
+        font-size: 2em;
+    }
+    .nav-header .logo{
+        font-size:2rem;
+    }
+}

@@ -1,0 +1,13 @@
+.email-preview{
+    display: flex;
+    flex-grow: 3;
+}
+.email-open{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.email-open >*{
+    margin-block: 5px;
+}

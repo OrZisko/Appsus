@@ -1,0 +1,37 @@
+.compose-container{
+    display: flex;
+    height: 95%;
+    width: 90%;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 10px;
+    
+    
+}
+
+.form-compose{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-compose >* {
+    width: 90%;
+    margin-block: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.button-form{
+    font-family: sans-black;
+    border:none;
+    width: 40%;
+    background-color: rgb(48, 48, 233);
+    color: white;
+    font-size: 1.5rem;
+}
+.compose-email-title{
+    font-family: sans-black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(48, 48, 233);
+}

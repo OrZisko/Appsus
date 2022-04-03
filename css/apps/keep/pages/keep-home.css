@@ -1,0 +1,103 @@
+.keep-home {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.keep-header {
+    background-color: gray;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0 1px lightgray;
+    padding: 5px;
+}
+
+.keeps-container {
+    list-style: none;
+    display: grid;
+    width: 90%;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    align-items: flex-start;
+}
+
+.keep-preview {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 5px 5px lightgray;
+    transition: box-shadow .3s;
+    word-wrap:break-word;
+}
+
+.label-container {
+    flex-wrap: wrap;
+}
+
+.keep-preview:hover {
+    box-shadow: 3px 3px rgb(163, 163, 163);
+}
+
+.keep-home img {
+    border-radius: 2px;
+    margin: 10px 0;
+}
+
+.keep-preview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.keep-preview pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.to-do {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.to-do p {
+    margin: 2px 0;
+    max-width: 130px;
+    word-wrap:break-word;
+}
+
+.keep-preview hr {
+    margin-top: 4px;
+    border: 1px solid black;
+}
+
+.pinned {
+    color: gold;
+}
+
+.search-container {
+    margin-top: 5px;
+    border: 0.3px solid gainsboro;
+    box-shadow: 1px 1px lightgray;
+
+    transition: width .5s;
+}
+
+.search-input {
+    border: none;
+}
+
+.pin-btn {
+    align-self: flex-end;
+}

@@ -1,0 +1,65 @@
+.keep-make .txt-input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.keep-make .to-do-container {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+}
+
+.keep-make p {
+    margin: 0;
+    max-width: 200px;
+}
+
+.keep-make article {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+.keep-make hr {
+    margin: 2px;
+}
+
+.keep-make img {
+    max-width: 200px;
+    align-self: center;
+}
+
+.keep-make textarea {
+    margin: 12px 0 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    resize: none;
+    background: none;
+    border: none;
+    font-weight: bolder;
+
+}
+
+.keep-make textarea:focus {
+    border: none;
+}
+
+.width-sizes {
+    list-style: none;
+    padding: 2px;
+    margin-left: 7px;
+}
+
+.width-pick {
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+    margin: 0 6px;
+}
